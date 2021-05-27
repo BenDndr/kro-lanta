@@ -1,0 +1,37 @@
+.logo {
+  height: 20%;
+}
+
+html {
+  background-image: url("./fond-krolnta.jpg");
+  background-position: center;
+  background-attachement: fixed;
+  background-size: cover;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.grid {
+  display: grid;
+  gap: 4px;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.case {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  height: 100px;
+  width: 1fr;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+.active {
+  background-color: purple;
+  color: white;
+  font-weight: bold;
+}

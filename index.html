@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="components/style.css">
+  </head>
+  <body>
+    <div class="container">
+        <center><img class="logo" src="components/Kro-lanta-détouré.png"><center>
+      <div class="grid">
+        <div class="case active">Un rouge fait de la merde</div>
+        <div class="case">Un rouge fait de la merde</div>
+        <div class="case">Un rouge fait de la merde</div>
+        <div class="case">Un rouge fait de la merde</div>
+        <div class="case">Un rouge fait de la merde</div>
+        <div class="case">Un rouge fait de la merde</div>
+        <div class="case">Un rouge fait de la merde</div>
+        <div class="case">Un rouge fait de la merde</div>
+        <div class="case">Un rouge fait de la merde</div>
+        <div class="case">Un rouge fait de la merde</div>
+        <div class="case">Un rouge fait de la merde</div>
+        <div class="case">Un rouge fait de la merde</div>
+        <div class="case">Un rouge fait de la merde</div>
+        <div class="case">Un rouge fait de la merde</div>
+        <div class="case">Un rouge fait de la merde</div>
+        <div class="case">Un rouge fait de la merde</div>
+        <div class="case">Un rouge fait de la merde</div>
+        <div class="case">Un rouge fait de la merde</div>
+        <div class="case">Un rouge fait de la merde</div>
+        <div class="case">Un rouge fait de la merde</div>
+        <div class="case">Un rouge fait de la merde</div>
+        <div class="case">Un rouge fait de la merde</div>
+        <div class="case">Un rouge fait de la merde</div>
+        <div class="case">Un rouge fait de la merde</div>
+        <div class="case">Un rouge fait de la merde</div>
+      </div>
+    </div>
+
+    <audio src="components/AH.mp3"></audio>
+    <script>
+
+    function playSound() {
+      const audio = document.querySelector('audio');
+      if(!audio) return;
+      audio.currentTime = 0;
+      audio.play();
+    };
+
+    const cases = document.querySelectorAll('.case').forEach((ca) => {
+      ca.addEventListener("click", (event) => {
+        event.currentTarget.classList.toggle("active");
+        playSound();
+      });
+    });
+
+  </script>
+
+  </body>
+</html>
